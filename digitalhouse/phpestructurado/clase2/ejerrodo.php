@@ -1,37 +1,32 @@
 <?php
+$nombre = "Daniel";
+$apellido = "Fuentes";
+$dni = 1324567;
+$sueldo = 8000;
+$dia = 6;
+$diasdelasemana = ["Lunes", "Martes" ,"Miercoles" ,"Juesves" ,"Viernes" ,"Sabado", "Domingo"];
+$calificacion = 0;
+$evaluacionestodas = ["Regular", "Bueno", "Excelente"];
+$porcentajes = [10,20,30];
 
+if ($calificacion > 2 || $dia  > 6){
+    echo "La Evaluacion deve ser: (0) = Regular, (1)= Bueno, (2)= Excelente"."<br>";    echo "Los dias de semana deven estar comprendidos entre 0 y 6"."<br>";
 
-$dia=3;
-$dias= ["Lunes", "Martes", "Miercoles", "Juesves", "Viernes", "Sabado", "Domingo" ];
-$evaluacion= 1;
-$evaluaciones= [ "Regular", "Bueno", "Excelente"];
-$porcentaje= [ 10 , 30 , 30];
-$porcentajingreso= 0;
-$nombre="Daniel";
-$apellido="Fuentes";
-$sueldo= 8000;
-$dni= 1324567;
-
-if ($evaluaciones[0]){
-    $porcentajecero=$porcentaje[0];
 }
+    else{
+    if($evaluacionestodas[0]==$evaluacionestodas[$calificacion]) {
+        $aumento = ($sueldo * $porcentajes[$calificacion])/100;
+        $nuevo_sueldo = $aumento + $sueldo;
     
-    elseif ($evaluaciones[1]){
-    $porcentajeingreso=$porcentaje[1];
-}
+    }elseif($evaluacionestodas[1]==$evaluacionestodas[$calificacion]) {
+        $aumento = ($sueldo * $porcentajes[$calificacion])/100;
+        $nuevo_sueldo = $aumento + $sueldo;
+    
+    }elseif($evaluacionestodas[2]==$evaluacionestodas[$calificacion]) {
+        $aumento = ($sueldo * $porcentajes[$calificacion])/100;
+        $nuevo_sueldo = $aumento + $sueldo;
+    }
+    }
 
-
-    elseif ($evaluaciones[2]){
-    $porcentajeingreso=$porcentaje[2];
-}
-
-if ($porcentajeingreso == $porcentaje[0]){
-    $sueldo
-}
-
-
-
- echo"Estimdos(a) $nombre  $apellido , portador del DNI: $dni , le informamos que el dia de hoy: $dias[$dia] , de acuerdo al nivel de evaluacion obtenido:  $evaluaciones[$evaluacion] , usted ha recivido un aumento del  $porcentaje , siendo su aumento de: ";
-
-
-?>
+echo  "Estimdo $nombre  $apellido, portador del DNI: $dni , le informamos que el dia de hoy: $diasdelasemana[$dia], de acuerdo al nivel de evaluacion obtenido: $evaluacionestodas[$calificacion], usted ha recivido un aumento de $aumento , siendo su sueldo total de: $nuevo_sueldo";
+ ?>
