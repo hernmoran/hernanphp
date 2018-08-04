@@ -28,5 +28,5 @@ if ($calificacion > 2 || $dia  > 6){
     }
     }
 
-echo  "Estimdo $nombre  $apellido, portador del DNI: $dni , le informamos que el dia de hoy: $diasdelasemana[$dia], de acuerdo al nivel de evaluacion obtenido: $evaluacionestodas[$calificacion], usted ha recivido un aumento de $aumento , siendo su sueldo total de: $nuevo_sueldo";
+echo  "Estimdo $nombre  $apellido, portador del DNI: $dni , le informamos que el dia de hoy: $diasdelasemana[$dia], de acuerdo al nivel de evaluacion obtenido: $evaluacionestodas[$calificacion], usted ha recivido un aumento de $aumento , siendo su sueldo un total de: $nuevo_sueldo";
  ?>
