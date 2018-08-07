@@ -93,4 +93,9 @@ if ($porcentajeingreso == $porcentaje[0]){
  echo "Estimdos(a) ". $nombre. " ". $apellido. ", portador del DNI: ". $dni. ", le informamos que el dia de hoy: ". $dia. ", de acuerdo al nivel de evaluacion obtenido: ". $evaluaciones. ", usted ha recivido un aumento del ". $porcentaje. ", siendo su aumento de: " ;
 
 
+ 
+ $nombre = “Juan”; $apellido = “Perez”; $casado = false; $edad = 35;
+ echo $nombre;
+ var_dump($apellido);
+
 ?>
